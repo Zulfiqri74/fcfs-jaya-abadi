@@ -1,0 +1,207 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f1f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #0f172a;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 25px;
+  color: white;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.sidebar a {
+  display: block;
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #1e293b;
+  color: white;
+}
+
+.main {
+  margin-left: 270px;
+  padding: 30px;
+}
+
+.topbar {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-box {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.btn-custom {
+  background: #2563eb;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.btn-custom:hover {
+  background: #1d4ed8;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table thead {
+  background: #0f172a;
+  color: white;
+}
+
+.table th,
+.table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.btn-selesai {
+  background: #16a34a;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-hapus {
+  background: #dc2626;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 100%;
+  max-width: 220px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: white;
+  padding: 10px;
+}
+
+.logo-text {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* =========================
+TABLE
+========================= */
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.table tbody tr {
+  background: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* =========================
+ACTIVE MENU
+========================= */
+
+.sidebar a.active {
+  background: #2563eb;
+  color: white;
+  border-radius: 10px;
+}
+
+/* =========================
+BADGE
+========================= */
+
+.badge-menunggu {
+  background: #facc15;
+  color: black;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge-proses {
+  background: #0ea5e9;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge-selesai {
+  background: #22c55e;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .card-box {
+    overflow-x: auto;
+  }
+}
